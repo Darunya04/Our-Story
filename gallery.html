@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Gallery ❤️</title>
+    <style>
+        body {
+            background-color: #ffe4e1;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0; padding: 0;
+            display: flex; flex-direction: column; align-items: center;
+        }
+
+        header {
+            background-color: #f0f0f0;
+            width: 100%; padding: 20px 0; text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .back-btn {
+            background-color: #ffffff; color: #333; padding: 8px 16px;
+            font-size: 14px; border: 1px solid #ccc; border-radius: 20px;
+            text-decoration: none;
+        }
+
+        .content {
+            max-width: 1100px;
+            width: 90%;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        h2 { color: #d63384; font-size: 32px; margin-bottom: 30px; }
+
+        /* GALLERY GRID */
+        .gallery-grid {
+            column-count: 3; /* Number of columns */
+            column-gap: 15px;
+        }
+
+        .gallery-item {
+            background-color: white;
+            margin-bottom: 15px; /* Spacing between rows */
+            break-inside: avoid;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.02);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            display: block;
+            height: auto;
+        }
+
+        .caption {
+            padding: 10px;
+            font-size: 14px;
+            color: #666;
+            font-style: italic;
+        }
+
+        /* Responsive: Adjust columns for smaller screens */
+        @media (max-width: 800px) {
+            .gallery-grid { column-count: 2; }
+        }
+        @media (max-width: 500px) {
+            .gallery-grid { column-count: 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Our Story❤️</h1>
+        <nav><a href="index.html" class="back-btn">← Back Home</a></nav>
+    </header>
+
+    <div class="content">
+        <h2>Our Favorite Memories</h2>
+        
+        <div class="gallery-grid">
+            
+            <div class="gallery-item">
+                <img src="pancakes.jpeg" alt="Memory 1">
+                <div class="caption">when we had pancakes for dinner</div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="asda.jpeg" alt="Memory 2">
+                <div class="caption">us finally getting some more pictures</div>
+            </div>
+
+<div class="gallery-item">
+    <video width="100%" controls style="display: block;">
+        <source src="cooking.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="caption">I will always love cooking for You, and you have a very cute giggle</div>
+</div>
+
+            <div class="gallery-item">
+                <img src="ratatouille.jpeg" alt="Memory 3">
+                <div class="caption">master chef in disguise</div>
+            </div>
+
+<div class="gallery-item">
+    <video width="100%" controls style="display: block;">
+        <source src="driving.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="caption">you will always be my passenger princess</div>
+</div>
+                        <div class="gallery-item">
+                <img src="mirror.jpeg" alt="Memory 3">
+                <div class="caption">slaying as always</div>
+            </div>
+
+                        <div class="gallery-item">
+                <img src="xmas lights.jpeg" alt="Memory 3">
+                <div class="caption">our first xmas</div>
+            </div>
+                        <div class="gallery-item">
+                <img src="princess.jpeg" alt="Memory 3">
+                <div class="caption">you getting the bare minimum</div>
+            </div>
+            </div>
+    </div>
+
+</body>
+</html>

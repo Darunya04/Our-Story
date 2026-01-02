@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Secret ❤️</title>
+    <style>
+body {
+    background-color: #ffe4e1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0; padding: 0;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    /* CHANGE THIS LINE */
+    min-height: 100vh; 
+    /* This ensures content can be scrolled */
+    overflow-y: auto; 
+}
+
+#secret-content {
+    display: none;
+    max-width: 600px;
+    width: 90%;
+    text-align: center;
+    /* Add some padding to the top and bottom so it's not touching the edges */
+    padding: 50px 0; 
+    animation: fadeIn 1.5s ease;
+}
+.spicy-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+            padding-bottom: 40px;
+        }
+
+        .spicy-card {
+            background-color: #2c2c2c; /* Deep Charcoal */
+            color: #ffb6c1; /* Soft Pink text */
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 15px;
+            font-style: italic;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            border: 1px solid #444;
+            transition: 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .spicy-card:hover {
+            border-color: #d63384;
+            transform: scale(1.02);
+            background-color: #353535;
+        }
+        #password-gate {
+            background-color: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+            max-width: 400px;
+            width: 90%;
+            transition: transform 0.1s;
+        }
+
+        input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin: 20px 0 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-sizing: border-box;
+            font-size: 18px;
+            text-align: center;
+            letter-spacing: 5px;
+        }
+
+        .hint-text {
+            display: block;
+            font-size: 13px;
+            color: #888;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+
+        .login-btn {
+            background-color: #d63384;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        /* Handwritten Letter Styling */
+        #secret-content {
+            display: none;
+            max-width: 600px;
+            width: 90%;
+            text-align: center;
+            animation: fadeIn 1.5s ease;
+        }
+
+        .letter {
+            background-color: #fffef0; /* Paper color */
+            padding: 50px;
+            border-radius: 2px;
+            box-shadow: 5px 5px 20px rgba(0,0,0,0.1);
+            line-height: 2;
+            font-family: 'Courier New', Courier, monospace; /* Typewriter/Handwritten feel */
+            text-align: left;
+            position: relative;
+            border-left: 40px solid #f9f9f9; /* Legal pad look */
+        }
+
+        .letter::before {
+            content: '';
+            position: absolute;
+            top: 0; left: -38px;
+            height: 100%; width: 2px;
+            background: rgba(255, 0, 0, 0.2); /* Red line on paper */
+        }
+
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-10px); }
+            75% { transform: translateX(10px); }
+        }
+        .error-shake { animation: shake 0.3s ease-in-out; }
+
+    </style>
+</head>
+<body>
+
+    <div id="password-gate">
+        <h2>🔒 Private Access</h2>
+        <p>This page is for your eyes only.</p>
+        
+        <input type="password" id="passInput" placeholder="Enter Code">
+        <span class="hint-text">Hint: Our anniversary (DDMMYY)</span>
+        
+        <button class="login-btn" onclick="checkPassword()">Unlock</button>
+    </div>
+
+   <div id="secret-content">
+        <div class="letter">
+            <p>Only You</p>
+            <p>
+"I need you to know that no matter where my mind goes or what my deepest desires are, they always start and end with you. Since that night on the 29th of September, everything changed. There is a specific kind of fire that only you can start in me, and it’s a million times more intense because of the trust we’ve built since that date. I’ve never felt more lucky than I do right now, knowing I have a woman who makes me feel completely safe to be my rawest, most unfiltered self.
+
+I’ve never been able to open up this way before, but with you, there’s no judgment—only this incredible, magnetic pull that makes me want to explore every inch of you and every fantasy I’ve ever had. You are the only one I want to lose control with, the only one I want to crave, and the only one I want to give everything to. Knowing that you’re mine, and that you’re just as hungry for me as I am for you, is the sexiest thing in the world. Since that September night, I've realized I don't just want your heart; I want every dark, beautiful, and primal part of you, too."
+            </p>
+            <p>I love you forever,</p>
+            <p>— Your Future Husband</p>
+        </div>
+
+        <h2 style="color: #d63384; margin-top: 50px;">The Reasons Only We Know...</h2>
+
+        <div class="spicy-grid">
+            <div class="spicy-card">The way you look at me when you want me.</div>
+            <div class="spicy-card">How I still get butterflies when you walk into the room wearing "that" outfit.</div>
+            <div class="spicy-card">The way your skin feels against mine when we're falling asleep.</div>
+            <div class="spicy-card">That specific sound you make when I kiss your neck.</div>
+            <div class="spicy-card">The way you look when you're wearing nothing but one of my t-shirts.</div>
+            <div class="spicy-card">How incredibly soft your hair feels between my fingers.</div>
+            <div class="spicy-card">The way you pull me closer when we're kissing.</div>
+            <div class="spicy-card">How much I love the curve of your body.</div>
+            <div class="spicy-card">The way you bite your lip when you’re thinking about something "naughty."</div>
+            <div class="spicy-card">The way you smell—it’s like a drug to me.</div>
+            <div class="spicy-card">How much I love seeing your messy "bedhead" hair in the morning.</div>
+            <div class="spicy-card">The way you look at me over your shoulder.</div>
+            <div class="spicy-card">How you know exactly where to touch me to make me lose my train of thought.</div>
+            <div class="spicy-card">The way you taste.</div>
+            <div class="spicy-card">How confident and powerful you look when you’re dressed up.</div>
+            <div class="spicy-card">How you aren't afraid to tell me what you like.</div>
+            <div class="spicy-card">The way you look when you're completely relaxed after we're together.</div>
+            <div class="spicy-card">Your "bedroom eyes" that tell me exactly what you’re thinking.</div>
+            <div class="spicy-card">How much I love the way your body fits perfectly against mine.</div>
+            <div class="spicy-card">The way you breathe in my ear when we’re close.</div>
+            <div class="spicy-card">How you can make me want you with just a single text message.</div>
+            <div class="spicy-card">The way your hands feel on my chest.</div>
+            <div class="spicy-card">That look in your eyes right before we kiss.</div>
+            <div class="spicy-card">How you’re the most beautiful thing I’ve ever seen.</div>
+            <div class="spicy-card">The fact that the physical connection we have is unlike anything I’ve ever felt.</div>
+        </div>
+
+        <br>
+        <a href="index.html" style="color: #d63384; text-decoration: none; font-weight: bold; display: block; margin-bottom: 50px;">← Back Home</a>
+    </div>
+
+    <script>
+        function checkPassword() {
+            const password = document.getElementById('passInput').value;
+            const gate = document.getElementById('password-gate');
+            
+            // PASSWORD IS NOW SET TO 271025
+            const correctPassword = "271025"; 
+
+            if (password === correctPassword) {
+                gate.style.display = 'none';
+                document.getElementById('secret-content').style.display = 'block';
+                document.body.style.backgroundColor = "#fdf2f4";
+            } else {
+                gate.classList.add('error-shake');
+                setTimeout(() => gate.classList.remove('error-shake'), 300);
+                alert("That's not it! Try again, beautiful. ❤️");
+                document.getElementById('passInput').value = "";
+            }
+        }
+
+        document.getElementById("passInput").addEventListener("keyup", function(event) {
+            if (event.key === "Enter") { checkPassword(); }
+        });
+    </script>
+
+</body>
+</html>
