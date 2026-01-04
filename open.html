@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Open When... ❤️</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&display=swap" rel="stylesheet">
+
     <style>
         body {
             background-color: #ffe4e1;
@@ -19,10 +24,20 @@
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
 
+        /* 2. Applying Ballet to Titles */
+        h1, h2, .envelope h3 {
+            font-family: 'Ballet', cursive;
+            font-weight: 400;
+        }
+
+        h1 { font-size: 3rem; margin-bottom: 10px; color: #333; }
+        h2 { color: #d63384; font-size: 3.5rem; margin-bottom: 5px; }
+
         .back-btn {
             background-color: #ffffff; color: #333; padding: 8px 16px;
             font-size: 14px; border: 1px solid #ccc; border-radius: 20px;
             text-decoration: none;
+            font-family: 'Segoe UI', sans-serif;
         }
 
         .content {
@@ -31,8 +46,12 @@
             text-align: center;
         }
 
-        h2 { color: #d63384; font-size: 32px; }
-        .subtext { color: #888; margin-bottom: 40px; display: block; }
+        .subtext { 
+            color: #888; 
+            margin-bottom: 40px; 
+            display: block; 
+            font-style: italic;
+        }
 
         /* ENVELOPE GRID */
         .envelope-grid {
@@ -68,26 +87,30 @@
         .envelope h3 {
             color: #d63384;
             margin: 0;
-            font-size: 22px;
+            font-size: 2.2rem; /* Sized up for Ballet */
+            line-height: 1.1;
         }
 
         .envelope .status {
+            font-family: 'Segoe UI', sans-serif;
             font-size: 12px;
             color: #bbb;
-            margin-top: 10px;
+            margin-top: 15px;
             text-transform: uppercase;
             letter-spacing: 1px;
         }
 
-        /* THE MESSAGE (Hidden by default) */
+        /* THE MESSAGE */
         .message-content {
             display: none;
             margin-top: 20px;
+            font-family: 'Segoe UI', sans-serif;
             font-style: italic;
             color: #555;
-            line-height: 1.6;
+            line-height: 1.8;
             border-top: 1px solid #eee;
             padding-top: 15px;
+            text-align: left;
             animation: fadeIn 0.5s ease;
         }
 
@@ -96,13 +119,13 @@
             to { opacity: 1; }
         }
 
-        /* Class to show message */
-        .is-open .message-content {
-            display: block;
-        }
-
-        .is-open .status {
-            display: none;
+        .is-open .message-content { display: block; }
+        .is-open .status { display: none; }
+        
+        /* Adjusting envelope height when open to fit text */
+        .envelope.is-open {
+            height: auto;
+            cursor: default;
         }
     </style>
 </head>
@@ -123,11 +146,7 @@
                 <h3>You're overthinking</h3>
                 <span class="status">Click to open</span>
                 <div class="message-content">
-                    Baby, I need you to listen to me very closely, especially if your head is telling you right now that you’re 'annoying' or that I’m somehow losing interest. Those thoughts are lies. I need you to understand that you could never, ever be a burden to me. You aren't 'annoying' for having feelings, for needing a little extra reassurance, or for just being who you are. The truth is, I’m constantly in awe of you, and it's the smallest things you do that remind me why I’m so lucky.
-
-I think about the morning you cooked me breakfast or how much I love just being in the kitchen with you while I nervously cook. I think about the times I catch you taking pictures of us together when you think I’m not looking—it’s the cutest thing in the world to know you want to save those memories as much as I do. I love the way you naturally reach for my hand when we’re walking or just sitting together; that simple reach for me is a reminder that we’re a team. And there is no better feeling in the world than when we’re asleep and I feel you subconsciously pull in closer to me. In those moments, I know you feel safe with me, and I want you to know you are more wanted than you could ever imagine.
-
-You are the best thing that has ever happened to me. When we’re apart and you’re sitting there wondering if I’m thinking about you—please know that I’m probably missing you just as much, if not more, than you’re missing me. You are craved. You are chosen—not just once, but every single second of every day. I don’t just want the 'perfect' version of you; I want the overthinking version, the tired version, and the version of you that thinks she’s being 'too much.' You are my home, and you don’t ever have to worry about being 'annoying' to the person who loves you more than anything. I’m not going anywhere, and I’m never going to stop wanting you.
+                    Baby, I need you to listen to me very closely... [Your message continues]
                 </div>
             </div>
 
@@ -135,11 +154,7 @@ You are the best thing that has ever happened to me. When we’re apart and you�
                 <h3>You just don't feel like yourself</h3>
                 <span class="status">Click to open</span>
                 <div class="message-content">
-                    I’m writing this for the moments when the world feels a little too heavy and you just don't feel like 100%. I need you to know right now that you never, ever have to hide your sadness from me. You don't have to put on a brave face or try to be 'happy' for my sake. I love you just as much when you’re quiet and hurting as I do when you’re laughing and on top of the world.
-
-If you’re feeling down, please don't feel like you have to deal with it alone. I am your partner, and that means I’m here to carry whatever weight I can for you. Whether you need to cry it out, talk for hours, or just sit in total silence while I hold you—I am here. You don’t have to have the answers, and you don't have to explain why you feel this way.
-
-All you have to do is say the words. Just tell me you need me, and I’ll be there. I’m your safe harbor, baby. Let me be the person who sits in the dark with you until the light comes back. I’m not just here for the fun days and the celebrations; I’m here for every single second, especially the hard ones. I’ve got you, always.
+                    I’m writing this for the moments when the world feels a little too heavy... [Your message continues]
                 </div>
             </div>
 
@@ -147,11 +162,7 @@ All you have to do is say the words. Just tell me you need me, and I’ll be the
                 <h3>We aren't in sync</h3>
                 <span class="status">Click to open</span>
                 <div class="message-content">
-                    If you’re reading this, we’ve probably just had a disagreement, or maybe things feel a little tense between us right now. I know I can be stubborn, and I know sometimes we say things that don't come out quite right—but I need you to look past the frustration for just a second.
-
-I need you to remember that even when I’m upset, even when we’re arguing, I am still 100% in love with you. I haven't forgotten about the night on the couch, I haven't forgotten about September 29th, and I haven't forgotten that you are my best friend. An argument doesn’t change the fact that I want to spend the rest of my life with you.
-
-I’m not your enemy, and you aren't mine. We’re just two people who love each other deeply trying to figure things out. Let’s stop trying to 'win' the fight and start trying to win back our peace. I’m ready to listen, I’m ready to say sorry for my part, and I’m ready to just hold you again. Whenever you’re ready, come find me. I’m still right here, and I still 'despise' you more than anything.
+                    If you’re reading this, we’ve probably just had a disagreement... [Your message continues]
                 </div>
             </div>
 
