@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Future ❤️</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&display=swap" rel="stylesheet">
+
     <style>
         body {
             background-color: #ffe4e1;
@@ -19,10 +24,29 @@
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
 
+        /* 2. Apply Ballet font to the main header and card titles */
+        h1, h3 {
+            font-family: 'Ballet', cursive;
+            font-weight: 400;
+        }
+
+        h1 {
+            font-size: 3.2rem;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        h3 { 
+            color: #d63384; 
+            font-size: 36px; /* Increased size because Ballet is a thin font */
+            margin-bottom: 15px; 
+        }
+
         .back-btn {
             background-color: #ffffff; color: #333; padding: 8px 16px;
             font-size: 14px; border: 1px solid #ccc; border-radius: 20px;
             text-decoration: none;
+            font-family: 'Segoe UI', sans-serif; /* Keep button text clean */
         }
 
         .slider-container {
@@ -30,18 +54,18 @@
             max-width: 500px;
             margin-top: 50px;
             position: relative;
-            overflow: hidden; /* Hides the cards that aren't active */
+            overflow: hidden;
             border-radius: 20px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.1);
         }
 
         .slider {
             display: flex;
-            transition: transform 0.5s ease-in-out; /* This makes it slide */
+            transition: transform 0.5s ease-in-out;
         }
 
         .future-card {
-            min-width: 100%; /* Each card takes up the full width of container */
+            min-width: 100%;
             background-color: white;
             padding: 40px;
             box-sizing: border-box;
@@ -52,10 +76,8 @@
         }
 
         .icon { font-size: 50px; margin-bottom: 20px; }
-        h3 { color: #d63384; font-size: 24px; margin-bottom: 15px; }
         p { color: #666; line-height: 1.6; font-size: 18px; }
 
-        /* Navigation Arrows */
         .nav-btns {
             margin-top: 20px;
             display: flex;
@@ -81,7 +103,7 @@
 <body>
 
     <header>
-        <h1>Our Story❤️</h1>
+        <h1>Our Future❤️</h1>
         <nav><a href="index.html" class="back-btn">← Back Home</a></nav>
     </header>
 
@@ -91,25 +113,25 @@
             <div class="future-card">
                 <div class="icon">✈️</div>
                 <h3>Travel the World</h3>
-                <p>The Adventures Await I’m so ready to pack our bags and see the world with you. I want to experience different cultures, try new foods, and get lost in cities we’ve never heard of, knowing that as long as I’m holding your hand, I’m never truly lost. Whether it’s a spontaneous road trip or a long flight across the ocean, I want to see every sunset and every landmark through your eyes. I want our camera roll to be full of memories from places we once only dreamed of visiting.</p>
+                <p>The Adventures Await I’m so ready to pack our bags and see the world with you. I want to experience different cultures, try new foods, and get lost in cities we’ve never heard of, knowing that as long as I’m holding your hand, I’m never truly lost.</p>
             </div>
 
             <div class="future-card">
                 <div class="icon">🏡💍</div>
                 <h3>Building Our Home</h3>
-                <p>Building Our Home I don’t just want to "be" with you; I want to build a life that is entirely ours. I’m dreaming of the day we get to say "I do" and start our journey as husband and wife. I can see us picking out furniture for our first home, arguing over where the couch goes, and finally having a space that feels like our own sanctuary. I want to create a place where we feel safe, where we can be our truest selves, and where we start the family we’ve talked about.</p>
+                <p>I don’t just want to "be" with you; I want to build a life that is entirely ours. I’m dreaming of the day we get to say "I do" and start our journey as husband and wife. I can see us picking out furniture for our first home together.</p>
             </div>
 
             <div class="future-card">
                 <div class="icon">🫂 ❤️</div>
                 <h3>My sanctuary</h3>
-                <p> I’m excited for the "forever" of it all, but I’m also ready for the reality of it. I want to be the person who holds you up when life gets heavy and the first person you run to when you have something to celebrate. I promise to support your dreams as if they were my own and to be the peace you come home to after a long day. No matter what challenges the world throws at us, I want us to be the ultimate team—always choosing each other, every single day.</p>
+                <p>I’m excited for the "forever" of it all, but I’m also ready for the reality of it. I want to be the person who holds you up when life gets heavy and the first person you run to when you have something to celebrate.</p>
             </div>
 
             <div class="future-card">
                 <div class="icon">🌅</div>
                 <h3>Growing Old Together</h3>
-                <p>Most of all, I’m excited to grow old with you. I want to see how we change over the decades and still be the one who knows exactly how to make you laugh. I imagine us years from now, still "awkwardly" cuddling on the couch, watching whatever the future version of Daz Games is, with a much older Bandit (or his successors) tucked between us. I want to look back on a lifetime of inside jokes and realize that the feeling I had the first night my heart skipped a beat for you never actually went away.</p>
+                <p>Most of all, I’m excited to grow old with you. I want to see how we change over the decades and still be the one who knows exactly how to make you laugh. I imagine us years from now, still awkwardly cuddling on the couch.</p>
             </div>
 
         </div>
@@ -129,7 +151,6 @@
             
             currentIndex += direction;
 
-            // Loop back to start or end
             if (currentIndex >= totalSlides) {
                 currentIndex = 0;
             } else if (currentIndex < 0) {
